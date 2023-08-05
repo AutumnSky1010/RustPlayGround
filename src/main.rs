@@ -1,6 +1,7 @@
 use actix_web::{get, post, web, App, HttpResponse, HttpServer, Responder, http::header};
 use actix_cors::Cors;
 mod handlers;
+mod domain;
 
 #[get("/")]
 async fn root() -> impl Responder {
