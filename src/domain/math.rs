@@ -1,4 +1,4 @@
-use actix_web::http::header::Range;
+
 
 pub fn gcd(mut x: i32, mut y: i32) -> i32 {
     if y > x {
@@ -52,4 +52,8 @@ pub fn pow(x: i32, n: i32) -> i32 {
         i += 1;
     }
     result
+}
+
+pub fn add(x: i32, y: i32) -> i32 {
+    return x + y;
 }
